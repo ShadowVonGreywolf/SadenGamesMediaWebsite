@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ONcKNMN6ctE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\denia\\Desktop\\Saden Games & Media\\SadenGamesMediaWebsite\\Back-end\\Back-end\\Back-end.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\denia\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\9.0.8\\microsoft.dotnet.ilcompiler.9.0.8.nupkg.sha512",
+    "C:\\Users\\denia\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.8\\microsoft.net.illink.tasks.9.0.8.nupkg.sha512",
+    "C:\\Users\\denia\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\9.0.8\\runtime.win-x64.microsoft.dotnet.ilcompiler.9.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
