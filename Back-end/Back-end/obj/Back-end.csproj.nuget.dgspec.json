@@ -44,17 +44,51 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.DotNet.ILCompiler": {
-              "suppressParent": "All",
+            "Dapper": {
               "target": "Package",
-              "version": "[9.0.8, )",
-              "autoReferenced": true
+              "version": "[2.1.66, )"
             },
-            "Microsoft.NET.ILLink.Tasks": {
+            "Dapper.ConnectionWrapper": {
+              "target": "Package",
+              "version": "[0.0.12, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[10.0.0-preview.7.25380.108, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Newtonsoft.Json.Bson": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "NewtonsoftJsonExt": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NewtonsoftJsonSerializerResolver": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NewtonsoftJsonUsageAnalyzer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.8, )",
-              "autoReferenced": true
+              "version": "[0.2.0, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "WebApiClientCore.Extensions.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[2.1.5, )"
             }
           },
           "imports": [
@@ -68,12 +102,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
-              "version": "[9.0.8, 9.0.8]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

@@ -6,7 +6,23 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>Back_end</RootNamespace>
         <InvariantGlobalization>true</InvariantGlobalization>
-        <PublishAot>true</PublishAot>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.1.66" />
+      <PackageReference Include="Dapper.ConnectionWrapper" Version="0.0.12" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0-preview.7.25380.108" />
+      <PackageReference Include="MySqlConnector" Version="2.4.0" />
+      <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.3" />
+      <PackageReference Include="NewtonsoftJsonExt" Version="1.0.0" />
+      <PackageReference Include="NewtonsoftJsonSerializerResolver" Version="1.0.0" />
+      <PackageReference Include="NewtonsoftJsonUsageAnalyzer" Version="0.2.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Scrutor" Version="6.1.0" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+      <PackageReference Include="WebApiClientCore.Extensions.NewtonsoftJson" Version="2.1.5" />
+    </ItemGroup>
 
 </Project>
