@@ -4,10 +4,11 @@ namespace Back_end.Repositories;
 
 public interface IProductModelRepository
 {
-    Task<List<ProductModel>> GetAllAsync();
-    Task<ProductModel> GetByIdAsync(int id);
-    Task AddAsync(ProductModel productModel);
-    Task UpdateAsync(ProductModel productModel);
-    Task DeleteAsync(int id);
+    Task<List<ProductModel>> GetAllProductsAsync();
+    Task<ProductModel> GetByIdProductAsync(int id);
+    Task<int> AddProductAsync(ProductModel productModel);
+    Task UpdateProductAsync(ProductModel productModel);
+    Task DeleteProductAsync(int id);
+   
 
 }

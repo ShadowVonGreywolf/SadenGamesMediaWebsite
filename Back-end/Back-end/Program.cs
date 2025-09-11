@@ -9,6 +9,7 @@ builder.Services.AddSingleton<DbConnection>();
 
 
 builder.Services.AddSingleton<IProductModelRepository, ProductModelRepository>();
+//builder.Services.AddSingleton<IVideogame_Movie_Service, Videogame_Movie_Service>();
 
 var app = builder.Build();
 

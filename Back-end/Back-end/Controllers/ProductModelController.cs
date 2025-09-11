@@ -1,6 +1,5 @@
 using Back_end.Models;
 using Back_end.Repositories;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Back_end.Controllers;
@@ -18,31 +17,45 @@ public class ProductModelController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<ProductModel>>> GetAllAsync()
+    public async Task<ActionResult<List<ProductModel>>> GetAllProductsAsync()
     {
-        var productModel = await _productModelRepository.GetAllAsync();
+        var productModel = await _productModelRepository.GetAllProductsAsync();
         return Ok(productModel);
     }
 
     [HttpGet("{id}")]
 
-    public async Task<ActionResult<ProductModel>> GetByIdAsync(int id)
+    public async Task<ActionResult<ProductModel>> GetByIdProductAsync(int id)
     {
-        var productModel = await _productModelRepository.GetByIdAsync(id);
+        var productModel = await _productModelRepository.GetByIdProductAsync(id);
         return productModel;
     }
 
     [HttpPost]
-    public async Task<ActionResult<ProductModel>> AddAsync(ProductModel productModel)
+    public async Task<ActionResult<ProductModel>> AddProductAsync(ProductModel productModel)
     {
-        await _productModelRepository.AddAsync(productModel);
+        int id = await _productModelRepository.AddProductAsync(productModel);
+        Console.WriteLine("This is the last id " + id);//testing the returned id
         return Ok();
     }
 
-    [HttpPut]
-    public async Task<ActionResult<ProductModel>> UpdateAsync(ProductModel productModel)
+    [HttpPut("{id}")]
+    public async Task<ActionResult<ProductModel>> UpdateProductAsync(int id, ProductModel productModel)
     {
-        await _productModelRepository.UpdateAsync(productModel);
+        var exists = await _productModelRepository.GetByIdProductAsync(id);
+        if (exists == null)
+            return NotFound("Product not found");
+        await _productModelRepository.UpdateProductAsync(productModel);
+        return Ok();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult<ProductModel>> DeleteProductAsync(int id)
+    {
+        var exists = await _productModelRepository.GetByIdProductAsync(id);
+        if (exists == null)
+            return NotFound("Product not found");
+        await _productModelRepository.DeleteProductAsync(id);
         return Ok();
     }
 }
