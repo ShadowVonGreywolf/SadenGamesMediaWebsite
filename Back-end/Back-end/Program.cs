@@ -8,8 +8,8 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<DbConnection>();
 
 
-builder.Services.AddSingleton<IProductModelRepository, ProductModelRepository>();
-//builder.Services.AddSingleton<IVideogame_Movie_Service, Videogame_Movie_Service>();
+builder.Services.AddSingleton<IProductRepo, ProductRepo>();
+builder.Services.AddSingleton<IGameRepo, GameRepo>();
 
 var app = builder.Build();
 

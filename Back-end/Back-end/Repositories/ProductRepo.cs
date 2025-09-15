@@ -4,47 +4,47 @@ using MySqlConnector;
 
 namespace Back_end.Repositories;
 
-public class ProductModelRepository : IProductModelRepository
+public class ProductRepo : IProductRepo
 {
     private readonly IConfiguration _configuration;
 
-    public ProductModelRepository(IConfiguration configuration)
+    public ProductRepo(IConfiguration configuration)
     {
         _configuration = configuration;
     }
 
-    public async Task<List<ProductModel>> GetAllProductsAsync()
+    public async Task<List<Product>> GetAllProductsAsync()
     {
         using var connection = GetConnection();
-        var productModels = await connection.QueryAsync<ProductModel>("SELECT * FROM products");
+        var productModels = await connection.QueryAsync<Product>("SELECT * FROM products");
         return productModels.ToList();
     }
 
-    public async Task<ProductModel> GetByIdProductAsync(int id)
+    public async Task<Product> GetByIdProductAsync(int id)
     {
         using var connection = GetConnection();
-        var productModel = await connection.QueryFirstOrDefaultAsync<ProductModel>("SELECT * FROM products WHERE ID = @id", new { id = id });
+        var productModel = await connection.QueryFirstOrDefaultAsync<Product>("SELECT * FROM products WHERE ID = @id", new { id = id });
         return productModel;
     }
 
-    public async Task<int> AddProductAsync(ProductModel productModel)
+    public async Task<int> AddProductAsync(Product product)
     {
         using var connection = GetConnection();
         return await connection.QuerySingleAsync<int>(
             "INSERT INTO products (title , genre, rating ,description, price, image_path, stock, product_type) " +
             "VALUES (@title , @genre, @rating ,@description, @price, @image_path, @stock, @product_type);" +
             "SELECT LAST_INSERT_ID();",
-            productModel);
+            product);
     }
 
-    public async Task UpdateProductAsync(ProductModel productModel)
+    public async Task UpdateProductAsync(Product product)
     {
         using var connection = GetConnection();
         await connection.ExecuteAsync(
             "UPDATE products " +
             "SET title = @title , genre = @genre , rating = @rating , description = @description, price = @price , image_path = @image_path, stock = @stock, product_type = @product_type " +
             "WHERE id = @id",
-            productModel);
+            product);
     }
 
     public async Task DeleteProductAsync(int id)

@@ -1,5 +1,5 @@
 namespace Back_end.Models;
-public class ProductModel
+public class Product
 {
     public int id { get; set; }
     public string title { get; set; }
