@@ -8,38 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ecba63d-f6d3-4022-8240-128883ff2a2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Back-end/Controllers/ProductController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Back-end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Back-end.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/Back-end.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Controllers/ProductModelController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Models/GameModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/Models/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Models/MovieModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/Models/Movie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Models/ProductModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/Models/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Repositories/GameModelRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Repositories/IGameModelRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Repositories/IMovieModelRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Repositories/IProductModelRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/Repositories/IProductRepo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Repositories/MovieModelRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Repositories/ProductModelRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/Repositories/ProductRepo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/Services/IProductService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/bin/Debug/net9.0/Back-end.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/bin/Debug/net9.0/Back-end.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/bin/Debug/net9.0/Back-end.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/bin/Debug/net9.0/Back-end.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/bin/Debug/net9.0/Back-end.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/bin/Debug/net9.0/Back-end.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/bin/Debug/net9.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/bin/Debug/net9.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-end/Models/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/Models/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/Back-end.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/ref/Back-end.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/ref/Back-end.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/refint/Back-end.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/refint/Back-end.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/Back-end/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Back-end/Models/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Back-end/Models/Movie.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Back-end/Models/Product.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Back-end/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Back-end/Repositories/GameRepo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Back-end/Repositories/IGameRepo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Back-end/Repositories/IMovieRepo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -136,7 +109,8 @@
       <workItem from="1757417098693" duration="8012000" />
       <workItem from="1757575523950" duration="16115000" />
       <workItem from="1757663859097" duration="9174000" />
-      <workItem from="1757942506553" duration="2686000" />
+      <workItem from="1757942506553" duration="3330000" />
+      <workItem from="1757950589474" duration="2332000" />
     </task>
     <servers />
   </component>

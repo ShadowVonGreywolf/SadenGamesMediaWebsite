@@ -16,15 +16,15 @@ public class ProductRepo : IProductRepo
     public async Task<List<Product>> GetAllProductsAsync()
     {
         using var connection = GetConnection();
-        var productModels = await connection.QueryAsync<Product>("SELECT * FROM products");
-        return productModels.ToList();
+        var products = await connection.QueryAsync<Product>("SELECT * FROM products");
+        return products.ToList();
     }
 
     public async Task<Product> GetByIdProductAsync(int id)
     {
         using var connection = GetConnection();
-        var productModel = await connection.QueryFirstOrDefaultAsync<Product>("SELECT * FROM products WHERE ID = @id", new { id = id });
-        return productModel;
+        var product = await connection.QueryFirstOrDefaultAsync<Product>("SELECT * FROM products WHERE ID = @id", new { id = id });
+        return product;
     }
 
     public async Task<int> AddProductAsync(Product product)
